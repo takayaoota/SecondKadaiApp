@@ -16,9 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfV-b2-uPq">
-                                <rect key="frame" x="106" y="467" width="202" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfV-b2-uPq">
+                                <rect key="frame" x="100" y="468" width="214" height="44"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="結果を表示する">
                                     <backgroundConfiguration key="background">
@@ -31,22 +30,32 @@
                                     <segue destination="y55-Bq-iN8" kind="presentation" identifier="toNext" id="2Fd-IQ-exo"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYC-9j-oq6">
-                                <rect key="frame" x="84" y="293" width="246" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYC-9j-oq6">
+                                <rect key="frame" x="80" y="294" width="254" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ilM-Io-fNB">
-                                <rect key="frame" x="71" y="393" width="272" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ilM-Io-fNB">
+                                <rect key="frame" x="70" y="391" width="274" height="37"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SYC-9j-oq6" secondAttribute="trailing" constant="80" id="1eb-5v-hSZ"/>
+                            <constraint firstItem="SYC-9j-oq6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="250" id="4d2-kt-RDl"/>
+                            <constraint firstItem="ilM-Io-fNB" firstAttribute="top" secondItem="SYC-9j-oq6" secondAttribute="bottom" constant="70" id="8gx-OG-I8b"/>
+                            <constraint firstItem="DfV-b2-uPq" firstAttribute="top" secondItem="ilM-Io-fNB" secondAttribute="bottom" constant="40" id="HHx-o3-I6x"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ilM-Io-fNB" secondAttribute="trailing" constant="70" id="cuz-yF-wlw"/>
+                            <constraint firstItem="SYC-9j-oq6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="g80-GR-xDh"/>
+                            <constraint firstItem="ilM-Io-fNB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="lK6-Ma-YSO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DfV-b2-uPq" secondAttribute="trailing" constant="100" id="lfh-MK-vja"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DfV-b2-uPq" secondAttribute="bottom" constant="350" id="nm0-2Y-qXD"/>
+                            <constraint firstItem="DfV-b2-uPq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="tTU-V8-IP7"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="nameTextField" destination="ilM-Io-fNB" id="zSn-Jv-9DY"/>
