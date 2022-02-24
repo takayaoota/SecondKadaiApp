@@ -31,13 +31,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYC-9j-oq6">
-                                <rect key="frame" x="80" y="294" width="254" height="27"/>
+                                <rect key="frame" x="80" y="337.5" width="254" height="26.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ilM-Io-fNB">
-                                <rect key="frame" x="70" y="391" width="274" height="37"/>
+                                <rect key="frame" x="70" y="384" width="274" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -46,14 +46,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SYC-9j-oq6" secondAttribute="trailing" constant="80" id="1eb-5v-hSZ"/>
-                            <constraint firstItem="SYC-9j-oq6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="250" id="4d2-kt-RDl"/>
-                            <constraint firstItem="ilM-Io-fNB" firstAttribute="top" secondItem="SYC-9j-oq6" secondAttribute="bottom" constant="70" id="8gx-OG-I8b"/>
-                            <constraint firstItem="DfV-b2-uPq" firstAttribute="top" secondItem="ilM-Io-fNB" secondAttribute="bottom" constant="40" id="HHx-o3-I6x"/>
+                            <constraint firstItem="DfV-b2-uPq" firstAttribute="top" secondItem="ilM-Io-fNB" secondAttribute="bottom" constant="50" id="Rs2-d8-mSe"/>
+                            <constraint firstItem="SYC-9j-oq6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="293.5" id="ble-IC-jlU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ilM-Io-fNB" secondAttribute="trailing" constant="70" id="cuz-yF-wlw"/>
+                            <constraint firstItem="ilM-Io-fNB" firstAttribute="top" secondItem="SYC-9j-oq6" secondAttribute="bottom" constant="20" id="dlW-uC-VhS"/>
                             <constraint firstItem="SYC-9j-oq6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="g80-GR-xDh"/>
                             <constraint firstItem="ilM-Io-fNB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="lK6-Ma-YSO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DfV-b2-uPq" secondAttribute="trailing" constant="100" id="lfh-MK-vja"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DfV-b2-uPq" secondAttribute="bottom" constant="350" id="nm0-2Y-qXD"/>
                             <constraint firstItem="DfV-b2-uPq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="tTU-V8-IP7"/>
                         </constraints>
                     </view>
